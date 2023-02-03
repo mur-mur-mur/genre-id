@@ -1,12 +1,14 @@
 import React from 'react';
-
+import Home from '../Home/Home';
+import Form from '../Form/Form';
 import './Layout.css';
 
 function Layout() {
   return (
     <>
       <header>header</header>     
-      <main className="home-container">welcome to murmur</main>
+      <Home />
+      <Form />
       <footer>footer</footer>
     </>
   );

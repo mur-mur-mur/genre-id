@@ -1,13 +1,11 @@
 import React from 'react';
-import Layout from '../Layout/Layout';
 
 import './Home.css';
 
 function Home() {
   return (
     <>
-      <Layout />
-     
+      <main className="home-container">welcome to murmur</main>
     </>
   );
 }

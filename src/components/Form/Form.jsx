@@ -8,16 +8,22 @@ function Form() {
 
   return (
     <>
-      <label>enter what you hear</label>
-      <select value={ genre } onChange={ handleSelection }>
-        <option value={ 'Please select a genre' } selected></option>
-        {
-          genres.map((item) => (
-            <option key={ item.id } value={ item.name }>{ item.name }</option>
-          ))
-        }
-      </select>
-    
+      <p>this is a form</p>
+      <label>select which genre(s) to add:
+        <select
+          name="selectedGenres"
+          defaultValue={ 'multiple genres can be selected' }
+          multiple={ true }
+          value={ genre }
+          onChange={ handleSelection }
+        >
+          {
+            genres.map((item) => (
+              <option key={ item.id } value={ item.name }>{ item.name }</option>
+            ))
+          }
+        </select>
+      </label>
     </>
   );
 }
