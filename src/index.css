@@ -1,4 +1,19 @@
 
+.wrap {
+  text-align: center;
+}
+
+.section {
+  background-color: #393f4a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(251, 219, 243);
+}
+
 
 
 /* 
