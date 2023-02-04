@@ -1,11 +1,10 @@
 .home-container {
-  background-color: #393f4a;
+  background-color: var(--onyx);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(251, 219, 243);
+  color: var(--pink);
 }
-

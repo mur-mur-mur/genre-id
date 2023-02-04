@@ -1,15 +1,15 @@
 import React from 'react';
 import Home from '../Home/Home';
-import Form from '../Form/Form';
+
 import './Layout.css';
 
 function Layout() {
   return (
     <>
-      <header>header</header>     
+      <header className="header">+</header>     
       <Home />
-      <Form />
-      <footer>footer</footer>
+      
+      <footer className="footer">&copy;adaam robson</footer>
     </>
   );
 }

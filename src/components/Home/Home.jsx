@@ -1,11 +1,12 @@
 import React from 'react';
+import Form from '../Form/Form';
 
 import './Home.css';
 
 function Home() {
   return (
     <>
-      <main className="home-container">welcome to murmur</main>
+      <main className="home-container"><Form /></main>
     </>
   );
 }
