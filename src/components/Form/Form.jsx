@@ -30,10 +30,11 @@ export default function Form() {
         <label htmlFor={ listOne }>
           <select 
             id={ listOne } 
-            form="form-element"
             className="form-select"
             name="form-select" 
+            form="form-element"
             multiple={ true }
+            size="7"
             value={ items }
             onChange={ ev => {
                 const options = [...ev.target.selectedOptions];
