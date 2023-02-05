@@ -1,35 +1,26 @@
-.form-section {
+.form-container {
+  min-height: 75vh;
+  min-width: 75vw;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
-  width:60%;
 }
 
 .form-element {
-  background-color: var(--onyx);
-  width:100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content:space-evenly;
-
-}
-
-.form-label {
-  background-color: var(--pink);
-  color: var(--onyx);
 }
 
 .form-select {
-  margin-top: .5em;
   background-color: var(--onyx);
   color: var(--pink);
+  font-size: 1em;
+
 }
 
-.list {
-  display:flex;
-  flex-direction: column;
-  
+.form-button {
+  margin-top: 1em;
 }
-

@@ -6,9 +6,16 @@
   
   --main-font: 'Alef', 'Inconsolata', 'Helvetica', sans-serif;
 
-  box-sizing: border-box;
+ 
+}
 
-  font-family: var(--main-font);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+ font-family: var(--main-font);
 }
 
 .wrap {
