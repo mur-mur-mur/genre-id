@@ -4,7 +4,7 @@
   --onyx: hsla(219, 13%, 26%, 1);
   --cadet: hsla(220, 13%, 68%, 1);
   
-  --main-font: 'Inconsolata', 'Helvetica', sans-serif;
+  --main-font: 'Alef', 'Inconsolata', 'Helvetica', sans-serif;
 
   box-sizing: border-box;
 
@@ -15,13 +15,3 @@
   text-align: center;
 }
 
-.section {
-  background-color: var(--onyx);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: var(--pink);
-}

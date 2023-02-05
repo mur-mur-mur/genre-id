@@ -1,19 +1,19 @@
 .form-section {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 10em;
-  height: 10em;
+  width:60%;
 }
 
 .form-element {
   background-color: var(--onyx);
   width:100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
+
 }
 
 .form-label {
@@ -22,13 +22,15 @@
   cursor: pointer;
 }
 
+.label-p-el {
+  font-size: 1em;
+}
+
 .form-select {
   margin-top: .5em;
-  font-size:.85em;
   background-color: var(--onyx);
   color: var(--pink);
 }
-
 
 .form-button {
   width: 45%;
