@@ -6,9 +6,12 @@ import './Layout.css';
 function Layout() {
   return (
     <>
-      <header className="header">+</header>     
+      <header className="header">genre id</header>     
       <Home />
-      <footer className="footer">&copy;adaam robson</footer>
+      <footer className="footer">
+        &copy;adaam robson
+        <img src="%PUBLIC_URL%/fvicn.ico" alt="adaam personal icon" />
+      </footer>
     </>
   );
 }
