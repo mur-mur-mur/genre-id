@@ -1,56 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState, useId } from 'react';
 import { genres } from '../../services/data';
 
 import './Form.css';
 
-function Form() {
-  const [genre, setGenre] = useState('');
+export default function Form() {
+  const listOne = useId();
 
-  const handleSubmit = (ev) => {
+  const [items, setItems] = useState([]);
+
+  function handleSubmit(ev) {
     ev.preventDefault();
-    return setGenre(ev.target.value);
-  };
-
-  const handleClick = (ev) => {
-    setGenre(ev.target.value);
-  };
+    const form = ev.target;
+    const formData = new FormData(form);
+    /* eslint-disable */
+    console.log(new URLSearchParams(formData).toString());
+    const formJson = Object.fromEntries(formData.entries());
+    /* eslint-disable */
+    return console.log([...formData.entries()]);
+  }
 
   return (
     <>
-      <section className="form-section"> 
-        <form className="form-element" onSubmit={ handleSubmit }>
-          
-          <fieldset>
-            <label className="form-label">genres<br />
-              <select
-                id="form-select"
-                className="form-select"
-                name="selectedGenres"
-                value={ genre }
-                defaultValue={ 'select an item' }
-                multiple={ true }
-              >
-                {
-                  genres.map((item) => (
-                    <option 
-                      onClick={ handleClick }
-                      className="form-option"
-                      key={ item.id } 
-                      value={ item.name }>{ 
-                        item.name 
-                      }</option>
-                  ))
+      <form onSubmit={ handleSubmit }>
+        <label 
+          htmlFor={ listOne }
+        >
+          <select 
+            id={ listOne } 
+            className="form-select"
+            name="form-select" 
+            multiple={ true }
+            value={ items }
+            onChange={ ev => {
+                const options = [...ev.target.selectedOptions];
+                const values= options.map(option => option.value);
+                setItems(values);
+              }
+            }
+          >
+            {
+              genres.map(
+                (val, index) => {
+                  return  <option 
+                            key={ index } 
+                            value={ val } 
+                          >{ val }</option> 
                 }
-              </select><br />
-
-            </label>
-            <button className="form-button">save</button>
-
-          </fieldset>
-        </form>
-      </section>
+              )
+            }
+          </select>
+        </label>
+        <p>Your genre: { items }</p>
+      
+      </form>
     </>
   );
 }
-
-export default Form;

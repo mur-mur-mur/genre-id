@@ -8,7 +8,6 @@ function Layout() {
     <>
       <header className="header">+</header>     
       <Home />
-      
       <footer className="footer">&copy;adaam robson</footer>
     </>
   );

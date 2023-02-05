@@ -10,4 +10,9 @@
   background-color: var(--onyx);
   font-size: calc(.75em + 1.25vmin);
   color: var(--pink);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 1em;
 }
