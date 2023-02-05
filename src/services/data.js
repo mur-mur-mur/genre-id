@@ -1,11 +1,32 @@
 export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'religious', 'traditional folk', 'miscellaneous'];
 
+export const data = {
+  labels: [
+    'classical', 
+    'avant-garde', 
+    'popular', 
+    'regional', 
+    'religious', 
+    'traditional folk', 
+    'miscellaneous'
+  ],
+  datasets: [{
+    label: 'My vFirst Dataset',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
 
 
 // export const array = [
 //   { 
 //     id: '1', 
-//     name: 'Classical',
+//     name: 'classical',
 //     subgenres: [
 //       { 
 //         id: '01', 
@@ -29,7 +50,7 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //         subgenres: [
 //           {
 //             id: '001',
-//             name: 'Early',
+//             name: 'early',
 //             subgenres: [
 //               { 
 //                 id: '0001', 
@@ -59,7 +80,7 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //           },
 //           {
 //             id: '002',
-//             name: 'Modern',
+//             name: 'modern',
 //             subgenres: [
 //               { 
 //                 id: '0001', 
@@ -101,7 +122,7 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //   },
 //   {
 //     id: '2',
-//     name: 'Avant-Garde',
+//     name: 'avant-garde',
 //     subgenres: [
 //       { 
 //         id: '01', 
@@ -139,7 +160,7 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //   },
 //   {
 //     id: '3',
-//     name: 'Popular',
+//     name: 'popular',
 //     subgenres: [
 //       { 
 //         id: '01', 
@@ -261,7 +282,7 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //       },
 //       { 
 //         id: '02', 
-//         name: 'Country',
+//         name: 'country',
 //         subgenres: [
 //           { 
 //             id: '001', 
@@ -391,219 +412,219 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //       },
 //       { 
 //         id: '03', 
-//         name: 'Easy Listening',
+//         name: 'easy listening',
 //         subgenres: [
 //           {
 //             id: '001',
-//             name: 'Background'
+//             name: 'background'
 //           },
 //           {
 //             id: '002',
-//             name: 'Barococo'
+//             name: 'barococo'
 //           },
 //           {
 //             id: '003',
-//             name: 'Background'
+//             name: 'background'
 //           },
 //           {
 //             id: '004',
-//             name: 'Barococo'
+//             name: 'barococo'
 //           },
 //           {
 //             id: '005',
-//             name: 'Background'
+//             name: 'background'
 //           },
 //           {
 //             id: '006',
-//             name: 'Barococo'
+//             name: 'barococo'
 //           },
 //           {
 //             id: '007',
-//             name: 'Beautiful'
+//             name: 'beautiful'
 //           },
 //           {
 //             id: '008',
-//             name: 'Chill-out'
+//             name: 'chill-out'
 //           },
 //           {
 //             id: '009',
-//             name: 'Furniture'
+//             name: 'furniture'
 //           },
 //           {
 //             id: '010',
-//             name: 'Light'
+//             name: 'light'
 //           },
 //           {
 //             id: '011',
-//             name: 'Lounge'
+//             name: 'lounge'
 //           },
 //           {
 //             id: '012',
-//             name: 'Middle-of-the-Road'
+//             name: 'middle-of-the-road'
 //           },
 //           {
 //             id: '013',
-//             name: 'New-Age'
+//             name: 'new-age'
 //           }
 //         ]
 //       },
 //       { 
 //         id: '04', 
-//         name: 'Electronic',
+//         name: 'electronic',
 //         subgenres: [
 //           {
 //             id: '001',
-//             name: 'Ambient'
+//             name: 'ambient'
 //           },
 //           {
 //             id: '002',
-//             name: 'Bass'
+//             name: 'bass'
 //           },
 //           {
 //             id: '003',
-//             name: 'Breakbeat'
+//             name: 'breakbeat'
 //           },
 //           {
 //             id: '004',
-//             name: 'Chill-out'
+//             name: 'chill-out'
 //           },
 //           {
 //             id: '005',
-//             name: 'Chopped & Screwed'
+//             name: 'chopped & screwed'
 //           },
 //           {
 //             id: '006',
-//             name: 'Disco'
+//             name: 'disco'
 //           },
 //           {
 //             id: '007',
-//             name: 'Disco Edits'
+//             name: 'disco edits'
 //           },
 //           {
 //             id: '008',
-//             name: 'Drum & Bass'
+//             name: 'drum & bass'
 //           },
 //           {
 //             id: '009',
-//             name: 'Dub'
+//             name: 'dub'
 //           },
 //           {
 //             id: '010',
-//             name: 'Electroacoustic'
+//             name: 'electroacoustic'
 //           },
 //           {
 //             id: '011',
-//             name: 'Electronic Rock'
+//             name: 'electronic rock'
 //           },
 //           {
 //             id: '012',
-//             name: 'Ethnic Electronica'
+//             name: 'ethnic electronica'
 //           },
 //           {
 //             id: '013',
-//             name: 'Funk'
+//             name: 'funk'
 //           },
 //           {
 //             id: '014',
-//             name: 'Jungle'
+//             name: 'jungle'
 //           },
 //           {
 //             id: '015',
-//             name: 'Hardcore'
+//             name: 'hardcore'
 //           },
 //           {
 //             id: '016',
-//             name: 'Hardstyle'
+//             name: 'hardstyle'
 //           },
 //           {
 //             id: '017',
-//             name: 'Hauntology'
+//             name: 'hauntology'
 //           },
 //           {
 //             id: '018',
-//             name: 'Hip Hop'
+//             name: 'hip hop'
 //           },
 //           {
 //             id: '019',
-//             name: 'House'
+//             name: 'house'
 //           },
 //           {
 //             id: '020',
-//             name: 'Industrial'
+//             name: 'industrial'
 //           },
 //           {
 //             id: '021',
-//             name: 'Intelligent Dance Music'
+//             name: 'intelligent dance music'
 //           },
 //           {
 //             id: '022',
-//             name: 'Neo-Soul'
+//             name: 'neo-Soul'
 //           },
 //           {
 //             id: '023',
-//             name: 'Nightcore'
+//             name: 'nightcore'
 //           },
 //           {
 //             id: '024',
-//             name: 'Noise Music'
+//             name: 'noise music'
 //           },
 //           {
 //             id: '025',
-//             name: 'Plunderphonics'
+//             name: 'plunderphonics'
 //           },
 //           {
 //             id: '026',
-//             name: 'Techno'
+//             name: 'techno'
 //           },
 //           {
 //             id: '027',
-//             name: 'Tecno Brega'
+//             name: 'tecno brega'
 //           },
 //           {
 //             id: '028',
-//             name: 'Trance'
+//             name: 'trance'
 //           },
 //           {
 //             id: '029',
-//             name: 'UK Garage'
+//             name: 'uk garage'
 //           },
 //           {
 //             id: '030',
-//             name: 'Video Game'
+//             name: 'video game'
 //           }
 //         ] 
 //       },
 //       { 
 //         id: '05', 
-//         name: 'Contemporary Folk' 
+//         name: 'contemporary folk' 
 //       },
 //       { 
 //         id: '06', 
-//         name: 'Hip Hop' 
+//         name: 'hip hop' 
 //       },
 //       { 
 //         id: '07', 
-//         name: 'Jazz' 
+//         name: 'jazz' 
 //       },
 //       { 
 //         id: '08', 
-//         name: 'Pop' 
+//         name: 'pop' 
 //       },
 //       { 
 //         id: '09', 
-//         name: 'R&B/Soul' 
+//         name: 'r&b/soul' 
 //       },
 //       { 
 //         id: '10', 
-//         name: 'Rock',
+//         name: 'rock',
 //         subgenres: [
 //           {
 //             id: '001',
-//             name: 'Metal'
+//             name: 'metal'
 //           },
 //           {
 //             id: '002',
-//             name: 'Punk'
+//             name: 'punk'
 //           }
 //         ] 
 //       }
@@ -611,19 +632,19 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //   },
 //   { 
 //     id: '4', 
-//     name: 'Regional' 
+//     name: 'regional' 
 //   },
 //   { 
 //     id: '5', 
-//     name: 'Religious',
+//     name: 'religious',
 //     subgenres: [
 //       {
 //         id: '01',
-//         name: 'Buddhist'
+//         name: 'buddhist'
 //       },
 //       {
 //         id: '02',
-//         name: 'Christian',
+//         name: 'christian',
 //         subgenres: [
 //           {
 //             id: '001',
@@ -655,7 +676,7 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //   },
 //   { 
 //     id: '6', 
-//     name: 'Traditional Folk',
+//     name: 'traditional folk',
 //     subgenres: [
 //       {
 //         id: '01',
@@ -683,6 +704,6 @@ export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'relig
 //   },
 //   { 
 //     id: '7', 
-//     name: 'Miscellaneous' 
+//     name: 'miscellaneous' 
 //   }
 // ];
