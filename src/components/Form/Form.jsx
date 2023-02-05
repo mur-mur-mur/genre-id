@@ -21,12 +21,15 @@ export default function Form() {
 
   return (
     <>
-      <form onSubmit={ handleSubmit }>
+      <form 
+      id="form-element"
+      className="form-element" onSubmit={ handleSubmit }>
         <label 
           htmlFor={ listOne }
         >
           <select 
             id={ listOne } 
+            form="form-element"
             className="form-select"
             name="form-select" 
             multiple={ true }
@@ -42,7 +45,7 @@ export default function Form() {
               genres.map(
                 (val, index) => {
                   return  <option 
-                            key={ index } 
+                            key={ index }
                             value={ val } 
                           >{ val }</option> 
                 }
@@ -50,8 +53,16 @@ export default function Form() {
             }
           </select>
         </label>
-        <p>Your genre: { items }</p>
-      
+        <div className="list">{ 'Your genres: ' }  
+        { items.map((item) => {
+          return <p key={ item.index }>{ item }</p>
+        })
+        }</div>  
+        <button 
+          className="form-button" 
+          type="submit"
+        >save list</button>
+            
       </form>
     </>
   );

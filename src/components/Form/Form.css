@@ -19,11 +19,6 @@
 .form-label {
   background-color: var(--pink);
   color: var(--onyx);
-  cursor: pointer;
-}
-
-.label-p-el {
-  font-size: 1em;
 }
 
 .form-select {
@@ -32,7 +27,9 @@
   color: var(--pink);
 }
 
-.form-button {
-  width: 45%;
+.list {
+  display:flex;
+  flex-direction: column;
+  
 }
 
