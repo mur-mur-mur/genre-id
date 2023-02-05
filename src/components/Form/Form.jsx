@@ -13,10 +13,8 @@ export default function Form() {
     const form = ev.target;
     const formData = new FormData(form);
     /* eslint-disable */
-    console.log(new URLSearchParams(formData).toString());
-    const formJson = Object.fromEntries(formData.entries());
-    /* eslint-disable */
-    return console.log([...formData.entries()]);
+    const entries = [...formData.entries()];
+    return entries
   }
 
   return (

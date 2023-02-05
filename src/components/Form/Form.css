@@ -3,18 +3,19 @@
   min-width: 75vw;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .form-element {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .form-select {
+
   background-color: var(--onyx);
   color: var(--apricot);
   font-size: 1em;
