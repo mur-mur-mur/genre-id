@@ -37,7 +37,10 @@ function Home() {
   return (
     <>
       <main className="home-container">
-        <Form />
+        <Form 
+          data={ data } 
+          options={ options } 
+        />
         <Chart data={ data } options={ options } />
       </main>
     </>

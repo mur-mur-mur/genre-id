@@ -48,9 +48,7 @@ export default function Form() {
           <button className="form-button" type="submit">save list</button>
         </form>
         <section className="list-container">
-          <div className="list">{ 
-            items.map(item => <p key={ item.index 
-            }>{ item }</p>) }</div>
+          <div className="list">{ items.map(item => <p key={ item.index }>{ item }</p>) }</div>
         </section>  
       </article>
     </>

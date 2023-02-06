@@ -10,7 +10,6 @@ function Layout() {
       <Home />
       <footer className="footer">
         &copy;adaam robson
-        <img src="%PUBLIC_URL%/fvicn.ico" alt="adaam personal icon" />
       </footer>
     </>
   );
