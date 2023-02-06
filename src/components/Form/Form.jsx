@@ -41,16 +41,20 @@ export default function Form() {
               }
             >
               {
-                genres.map((genre) => <option key={ genre.id } value={ genre.id }>{ genre }</option>)
+                genres.map((genre) => {
+                  return <option 
+                    key={ genre.id } 
+                    value={ genre }>{ genre }</option>;
+                }) 
               }
             </select>
           </label>
-          <button className="form-button" type="submit">save list</button>
         </form>
         <section className="list-container">
           <div className="list">{ items.map(item => <p key={ item.index }>{ item }</p>) }</div>
         </section>  
       </article>
+     
     </>
   );
 }
