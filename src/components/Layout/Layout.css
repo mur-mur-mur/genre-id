@@ -9,7 +9,7 @@
 .footer {
   background-color: var(--onyx);
   font-size: calc(.75em + 1.25vmin);
-  color: var(--pink);
+  color: var(--apricot);
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
