@@ -1,6 +1,6 @@
 export const genres = ['classical', 'avant-garde', 'popular', 'regional', 'religious', 'traditional folk', 'miscellaneous'];
 
-export const classical = ['Western', 'Andalusian', 'Indian', 'Korean', 'Persian']; 
+export const classical = ['Western', 'Andalusian', 'Indian', 'Korean', 'Persian'];
 
 export const avantGarde = ['Danger', 'Electroacoustic', 'Lo-fi', 'Musique concrete', 'Noise', 'Outdoor', 'industial', 'progressive'];
 
@@ -26,6 +26,6 @@ export const countryPopular = ['alternative', 'americana', 'australian', 'bakers
 
 export const electronicPopular = ['ambient', 'bass', 'chill-out', 'breakbeat', 'chopped & screwed', 'disco', 'drum & bass', 'electroacoustic', 'disco edits', 'ethnic electronica', 'dub', 'electronic rock', 'funk', 'industrial', 'house', 'hauntology', 'hardstyle', 'hardcore', 'jungle', 'hip hop', 'intelligent dance music', 'neo-Soul', 'nightcore', 'noise', 'plunderphonics', 'techno', 'techno brega', 'trance', 'uk garage', 'video game'];
 
-export const christianReligious = ['gregorian chant', 'church', 'spirituals'];   
+export const christianReligious = ['gregorian chant', 'church', 'spirituals'];
 
 export const latinFolkTraditionalFolk = ['Fado', 'Huyano', 'Son Mexicano', 'Musica Criolla'];
