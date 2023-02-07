@@ -1,5 +1,5 @@
 import React, { useState, useId } from 'react';
-import { genres } from '../../services/data';
+import { genres } from '../../services/genreData';
 
 import './Form.css';
 
