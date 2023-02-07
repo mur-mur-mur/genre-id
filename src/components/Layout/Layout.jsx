@@ -1,16 +1,16 @@
 import React from 'react';
+import Header from './Header/Header';
 import Home from '../Home/Home';
+import Footer from './Footer/Footer';
 
 import './Layout.css';
 
 function Layout() {
   return (
     <>
-      <header className="header">genre id</header>     
+      <Header />    
       <Home />
-      <footer className="footer">
-        &copy;adaam robson
-      </footer>
+      <Footer />
     </>
   );
 }

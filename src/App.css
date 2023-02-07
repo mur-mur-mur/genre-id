@@ -8,7 +8,7 @@
   --laven: hsla(263, 6%, 43%, 1);
   --cadet: hsla( 210, 17%, 35%, 1);
   --onyx: hsla(219, 13%, 26%, 1);
-  --main-font: 'Alef', 'Inconsolata', 'Helvetica', sans-serif;
+  --main-font: 'Alef', 'Inconsolata', 'Trebuchet MS', sans-serif;
 }
 
 * {
@@ -18,7 +18,7 @@
 html,
 body {
  font-family: var(--main-font);
- background-color: var(--onyx);
+ background-color: var(--cadet);
  color: var(--cream);
 }
 
