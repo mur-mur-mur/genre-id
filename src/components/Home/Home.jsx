@@ -15,7 +15,7 @@ export default function Home() {
     ],
     datasets: [{
       label: '# of plays',
-      data: [0, 0, 12, 24, 7, 33, 12],
+      data: [1, 1, 1, 1, 1, 1, 1],
       backgroundColor: [
         'hsla(210, 17%, 35%, 1)',
         'hsla(21, 100%, 85%, 1)',

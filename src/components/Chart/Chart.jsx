@@ -12,15 +12,11 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function Chart({ data, options }) {
-  
-
- 
-
   return (
     <>
       <article className="chart-container">
         <section className="chart-section">
-          <h3>Map of Genres
+          <h3>genres
             <div>
               <Doughnut data={ data } options={ options }></Doughnut>
             </div>

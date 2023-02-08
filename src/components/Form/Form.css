@@ -19,3 +19,14 @@
 .form-button {
   margin-top: 1em;
 }
+
+.select-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-list {
+  list-style: none;
+}
