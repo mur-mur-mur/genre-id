@@ -3,13 +3,18 @@ import { genres } from '../../services/genres';
 import './Form.css';
 
 export default function Form() {
+  const [name, setName] = useState('');
   const [genresList, setGenresList] = useState([]);
+  
+  function handleAdd(e) {
+    setName(e.target.value);
+  }
+
   return (
     <>
       <select
         className="select-list"
-       
-        value={ genresList }
+        value={ name }
         onChange={ e => setGenresList([e.target.value, ...genresList]) }>
         {
           genres.map((genre, index) => <option key={index}>{ genre }</option>)
@@ -20,7 +25,8 @@ export default function Form() {
           <li key={ index }>{ genre }</li>
         )) 
       }</ul>
-      <button>Add</button>
+      <button onClick={ handleAdd }>Add</button>
+      <p>{ name }</p>
     </>
   );
 }
