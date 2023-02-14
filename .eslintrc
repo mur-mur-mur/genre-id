@@ -1,23 +1,21 @@
 {
   "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "ecmaFeatures": {
       "impliedStrict": true,
       "jsx": true
     },
-    "sourceType": "module"
+    "sourceType": "module",
+    "requireConfigFile": false
   },
+  "plugins": ["@babel"],
+  "parser": "@babel/eslint-parser",
   "env": {
     "browser": true,
     "es6": true,
     "jest": true,
     "node": true
-  },
-  "globals": {
-    "QUnit": false,
-    "before": false,
-    "cy": false
   },
   "rules": {
     "eqeqeq": ["error", "always"],
@@ -64,6 +62,14 @@
         "named": "never"
       }
     ],
+    "eol-last": ["error", "always"],
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
     "keyword-spacing": [
       "error",
       {
@@ -73,7 +79,11 @@
     ],
     "array-bracket-spacing": "error",
     "react/prop-types": "off",
+    "prefer-const": "error",
+    "no-var": "error",
+    "rest-spread-spacing": "error",
     "no-unused-vars": ["warn"],
+    "prefer-arrow-callback": "error",
     "react/react-in-jsx-scope": "off"
   },
   "settings": {
