@@ -1,0 +1,32 @@
+.form-container {
+  grid-area: c;
+
+}
+
+.form-element {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-select {
+  background-color: var(--onyx);
+  color: var(--apricot);
+  font-size: 1em;
+}
+
+.form-button {
+  margin-top: 1em;
+}
+
+.select-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-list {
+  list-style: none;
+}

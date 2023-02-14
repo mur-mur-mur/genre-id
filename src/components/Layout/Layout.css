@@ -1,0 +1,18 @@
+.header {
+  background-color: var(--onyx);
+  color: var(--pink);
+  font-size: calc(.75em + 1.25vmin);
+  text-align:right;
+  padding: .5em;
+}
+
+.footer {
+  background-color: var(--onyx);
+  font-size: calc(.75em + 1.25vmin);
+  color: var(--apricot);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 1em;
+}

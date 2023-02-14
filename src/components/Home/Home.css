@@ -1,0 +1,8 @@
+.home-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  ". a b c .";
+  align-items: center;
+}
+
