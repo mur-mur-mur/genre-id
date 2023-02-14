@@ -1,21 +1,27 @@
+import { useState } from 'react';
 import './Home.css';
 import Chart from '../Chart/Chart';
 import Form from '../Form/Form';
+import { GENRES } from '../../services/genres';
+
 
 export default function Home() {
+  const [genresList, setGenresList] = useState([]);
+
+// function to return data.datsets.data;
+  const generateCount = (genresList) => {
+    const counter = {};
+    genresList.forEach(item => counter[item] = (counter[item] || 0) + 1);
+    // return an array of counts
+    return GENRES.map(i => counter[i] || 0);
+  };
+
   const data = {
-    labels: [
-      'classical',
-      'avant-garde',
-      'popular',
-      'regional',
-      'religious',
-      'traditional folk',
-      'miscellaneous'
-    ],
+    labels: GENRES,
     datasets: [{
       label: '# of plays',
-      data: [1, 1, 1, 1, 1, 1, 1],
+      // data: [1, 1, 1, 1, 1, 1, 1],
+      data: generateCount(genresList),
       backgroundColor: [
         'hsla(210, 17%, 35%, 1)',
         'hsla(21, 100%, 85%, 1)',
@@ -36,7 +42,7 @@ export default function Home() {
   return (
     <>
       <main className="home-container">
-        <Form data={ data } options={ options }/>
+        <Form data={ data } options={ options } genresList={ genresList } setGenresList={ setGenresList }/>
         <Chart data={ data } options={ options } />
       </main>
     </>

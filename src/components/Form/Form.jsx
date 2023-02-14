@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { genres } from '../../services/genres';
+import { GENRES } from '../../services/genres';
 import './Form.css';
 
-export default function Form() {
+export default function Form({ genresList, setGenresList }) {
   const [name, setName] = useState('');
-  const [genresList, setGenresList] = useState([]);
   
   function handleAdd(e) {
     setName(e.target.value);
@@ -16,8 +15,9 @@ export default function Form() {
         className="select-list"
         value={ name }
         onChange={ e => setGenresList([e.target.value, ...genresList]) }>
+        <option value=""></option>
         {
-          genres.map((genre, index) => <option key={index}>{ genre }</option>)
+          GENRES.map((genre, index) => <option key={index}>{ genre }</option>)
         }
       </select>
       <ul className="ul-list">{ 
