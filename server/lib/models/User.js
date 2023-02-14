@@ -25,10 +25,17 @@ module.exports = class User {
     return new User(rows[0]);
   }
 
+  static async getByEmail(email) {
+    const { rows } = await pool.query(
+      'SELECT * FROM users WHERE email=$1',
+      [email]
+    );
 
-
-
-
+    rows[0] ? new User(rows[0]) : console.info('There is no user stored with that email');
+  }
+  get passwordHash() {
+    return this.#passwordHash;
+  }
 };
 
 
