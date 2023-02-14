@@ -1,5 +1,7 @@
 const { Router } = require('express');
 const UserService = require('../models/UserService');
+const authenticate = require('../middleware/authenticate');
+const authorize = require('../middleware/authorize');
 
 const COOKIE_NAME = process.env.COOKIE_NAME;
 const SECURE_COOKIES = process.env.SECURE_COOKIES;
@@ -21,7 +23,7 @@ module.exports = Router()
     }
   })
 
-  .post('/users/go', async (req, res, next) => {
+  .post('/users/in', async (req, res, next) => {
     try {
       const token = await UserService.signIn(req.body);
 
@@ -35,7 +37,44 @@ module.exports = Router()
         .json({ message: 'You have been signed in successfully!' });
      
     } catch (e) {
+      
       next(e);
+    
     }
+  })
+
+  .get('/users/me', [authenticate], async (req, res) => {
+    
+    res.json(req.user);
+  
+  })
+
+  .get('/users/all', [authenticate, authorize], async (req, res, next) => {
+    try {
+  
+      const users = await UserService.getAll();
+      res.json(users);
+
+    } catch (e) {
+
+      next(e);
+  
+    }
+  })
+
+  .delete('/users/in', (req, res) => {
+  
+    res
+      .clearCookie(COOKIE_NAME, {
+        httpOnly: true,
+        secure: SECURE_COOKIES === 'true',
+        sameSite: SECURE_COOKIES === 'true' ? 'none' : 'strict',
+        maxAge: ONE_DAY_IN_MS
+      })
+  
+      .status(204)
+  
+      .send();
   });
+
 
