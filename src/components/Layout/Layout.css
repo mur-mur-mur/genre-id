@@ -1,6 +1,6 @@
 .header {
   background-color: var(--onyx);
-  color: var(--pink);
+  color: var(--cream);
   font-size: calc(.75em + 1.25vmin);
   text-align:right;
   padding: .5em;
@@ -9,7 +9,7 @@
 .footer {
   background-color: var(--onyx);
   font-size: calc(.75em + 1.25vmin);
-  color: var(--apricot);
+  color: var(--cream);
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;

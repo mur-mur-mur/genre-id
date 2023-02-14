@@ -18,7 +18,7 @@ export default function Chart({ data, options }) {
       <article className="chart-container">
         <section className="chart-section">
           <h3>
-            <div>
+            <div className="chart">
               <Doughnut data={ data } options={ options }></Doughnut>
             </div>
           </h3>

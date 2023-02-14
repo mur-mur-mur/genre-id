@@ -4,9 +4,6 @@ import './Form.css';
 
 export default function Form({ genresList, setGenresList }) {
   const [name, setName] = useState('');
-
-
-
   return (
     <>
       <select

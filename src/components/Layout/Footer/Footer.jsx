@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className="footer">
         <h5 className="h5 title">
-          &copy;adaam robson
+          &copy; adaam robson
         </h5>
       </footer>
     </>
