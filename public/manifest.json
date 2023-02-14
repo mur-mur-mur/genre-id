@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "author": "Adaam Robson",
+  
+  "short_name": "genre-id",
+  "name": "genre-id",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

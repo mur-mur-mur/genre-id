@@ -4,10 +4,8 @@ import './Form.css';
 
 export default function Form({ genresList, setGenresList }) {
   const [name, setName] = useState('');
-  
-  function handleAdd(e) {
-    setName(e.target.value);
-  }
+
+
 
   return (
     <>
@@ -25,8 +23,6 @@ export default function Form({ genresList, setGenresList }) {
           <li key={ index }>{ genre }</li>
         )) 
       }</ul>
-      <button onClick={ handleAdd }>Add</button>
-      <p>{ name }</p>
     </>
   );
 }

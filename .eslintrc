@@ -1,21 +1,29 @@
 {
   "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "ecmaFeatures": {
       "impliedStrict": true,
       "jsx": true
     },
+    "babelOptions": {
+       "presets": ["@babel/preset-react"]
+    },
     "sourceType": "module",
     "requireConfigFile": false
   },
   "plugins": ["@babel"],
-  "parser": "@babel/eslint-parser",
   "env": {
     "browser": true,
     "es6": true,
     "jest": true,
     "node": true
+  },
+  "globals": {
+    "QUnit": false,
+    "before": false,
+    "cy": false
   },
   "rules": {
     "eqeqeq": ["error", "always"],

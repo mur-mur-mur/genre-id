@@ -13,6 +13,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function Chart({ data, options }) {
   return (
+    // eslint-disable-next-line 
     <>
       <article className="chart-container">
         <section className="chart-section">
