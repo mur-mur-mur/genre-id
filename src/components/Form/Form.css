@@ -1,32 +1,21 @@
 .form-container {
   grid-area: c;
-
-}
-
-.form-element {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3em;
 }
 
-.form-select {
+.select-element {
   background-color: var(--onyx);
-  color: var(--apricot);
-  font-size: 1em;
+  color: var(--cream);
 }
 
-.form-button {
-  margin-top: 1em;
+.list-element {
+  width: 4em;
 }
 
-.select-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.ul-list {
+.list {
   list-style: none;
 }

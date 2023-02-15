@@ -37,7 +37,26 @@ export default function Home() {
     hoverOffset: 5,
   };
 
-  const options = {};
+  const options = {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Doughnut Chart',
+        color: 'hsla(208, 13%, 61%, 1)',
+        font: {
+          size: 22
+        },
+        padding: {
+          top: 30,
+          bottom: 30
+        },
+        responsive: true,
+        animation: {
+          animateScale: true,
+        }
+      }
+    }
+  };
 
   return (
     <>

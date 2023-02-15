@@ -16,13 +16,9 @@ export default function Chart({ data, options }) {
     // eslint-disable-next-line 
     <>
       <article className="chart-container">
-        <section className="chart-section">
-          <h3>
-            <div className="chart">
-              <Doughnut data={ data } options={ options }></Doughnut>
-            </div>
-          </h3>
-        </section>
+        <div className="chart">
+          <Doughnut data={ data } options={ options }></Doughnut>
+        </div>
       </article>
     </>
   );
