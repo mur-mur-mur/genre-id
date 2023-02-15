@@ -1,7 +1,9 @@
+.chart-container {
+  height: 40%;
+
+}
 
 .chart {
-  height: auto;
-  width: 50%;
-  margin: 0 auto;
-  
+  height: 40%;
+   
 }

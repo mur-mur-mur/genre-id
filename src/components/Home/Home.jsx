@@ -18,8 +18,20 @@ export default function Home() {
 
   const data = {
     labels: GENRES,
+    exportFileName: 'doughnut chart',
+    exportEnabled: true,
+    animationEnabled: true,
+    fontSize: 16,
+    title: {
+      text: 'Genres',
+      horizontalAlign: 'center'
+    },
+    data: [{
+      type: 'doughnut',
+      innerRadius: 90,
+    }],
     datasets: [{
-      label: '# of plays',
+      label: 'number of plays',
       // data: [1, 1, 1, 1, 1, 1, 1],
       data: generateCount(genresList),
       backgroundColor: [
@@ -32,7 +44,10 @@ export default function Home() {
         'hsla(263, 6%, 43%, 1)'
       ],
       borderColor: ['black'],
-      borderWidth: .5,
+      borderWidth: 1,
+      legend: {
+        cursor: 'pointer',
+      },
     }],
     hoverOffset: 5,
   };
@@ -44,7 +59,10 @@ export default function Home() {
         text: 'Doughnut Chart',
         color: 'hsla(208, 13%, 61%, 1)',
         font: {
-          size: 22
+          size: 13
+        },
+        height: {
+
         },
         padding: {
           top: 30,
