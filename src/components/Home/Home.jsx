@@ -7,7 +7,6 @@ import { GENRES } from '../../services/genres';
 
 export default function Home() {
   const [genresList, setGenresList] = useState([]);
-
 // function to return data.datsets.data;
   const generateCount = (genresList) => {
     const counter = {};

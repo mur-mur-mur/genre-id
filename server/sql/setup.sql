@@ -7,9 +7,3 @@ CREATE TABLE users (
   first_name VARCHAR,
   last_name VARCHAR
 );
-
-CREATE TABLE genres (
-  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  subgenres TEXT[],
-)
