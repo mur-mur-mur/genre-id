@@ -1,33 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import List from '../List/List';
 import { GENRES } from '../../services/genres';
-const DATABASE_URL = process.env.DATABASE_URL;
 
-export default function nu({  
+export default function Form({  
   genresList, 
   setGenresList }) {
-
-  const handleSubmit = (e) => {
-    // Prevent the browser from reloading the page
-    e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    
-    fetch(DATABASE_URL, { method: form.method, body: data });
-    
-    return 'the following genres have been added: ' + [...data.entries()].join(' ');
-  };  
-
   return (
-    <>
+    <Fragment>
       <section className="form-container">
-        <article className="list-container">
-          <ul id="list" className="list">{
-            genresList.map((genre, index) => {
-              return <li className="list-item" key={ index }>{ genre }</li>;
-            })
-          }</ul>
-        </article>
-        <form id="form" method="post" onSubmit={ handleSubmit }>
+        <List genresList={ genresList } />
+        <form id="form" method="post">
           <article className="form-select">
             <label>genres<br />
               <select
@@ -41,16 +23,13 @@ export default function nu({
                       key={ index } 
                       value={ genre } 
                       onChange={ setGenresList }
-                    >{ genre }</option>;
+                    >{ genre.title }</option>;
                   })
                 }</select>
             </label>
           </article>
-          
         </form>
       </section>
-    </>
+    </Fragment>
   );
 }
-
-
